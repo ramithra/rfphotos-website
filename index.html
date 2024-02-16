@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rfphotos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f8f8 url('https://i.imgur.com/WwFojjy.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            margin: 20px;
+            transition: background 1s ease; /* Smooth transition effect */
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            margin-top: 20px;
+            color: #fff;
+            text-align: center; /* Center the text */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        // JavaScript to shuffle background images
+        const backgroundImages = [
+            'https://i.imgur.com/WwFojjy.jpeg',
+            'https://i.imgur.com/Oji6Xqo.jpeg',
+            'https://i.imgur.com/Lzp68xU.jpeg',
+            'https://i.imgur.com/fFJwwOa.jpeg',
+            'https://i.imgur.com/6KecgXE.jpeg',
+            'https://i.imgur.com/ODtnVQD.jpeg',
+            'https://i.imgur.com/IgAG2lf.jpeg',
+            'https://i.imgur.com/2Ua601n.jpeg',
+            'https://i.imgur.com/5CKj8b2.jpeg',
+            'https://i.imgur.com/s0rsYxV.jpeg'
+        ];
+
+        let currentIndex = 0;
+
+        function changeBackground() {
+            document.body.style.backgroundImage = `url('${backgroundImages[currentIndex]}')`;
+            currentIndex = (currentIndex + 1) % backgroundImages.length;
+        }
+
+        setInterval(changeBackground, 3000); // Change background every 3 seconds
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Rfphotos</h1>
+    </header>
+
+    <section>
+       
+        <p>
+            Rfphotos.USA.Sony A6500.iPhone 15 Pro.
+        </p>
+    </section>
+
+    <!-- Add more sections or content as needed -->
+
+    <footer>
+        <p>| Instagram: @rfphotos | </p>
+    </footer>
+</body>
+</html>
