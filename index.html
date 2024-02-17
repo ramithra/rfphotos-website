@@ -54,7 +54,8 @@
 
         function changeBackground() {
             document.body.style.transition = 'background 1s ease'; // Ensure transition for all changes
-            document.body.style.backgroundImage = `url('${backgroundImages[currentIndex]}')`;
+            document.body.style.background = `url('${backgroundImages[currentIndex]}') no-repeat center center fixed`;
+            document.body.style.backgroundSize = 'cover';
             currentIndex = (currentIndex + 1) % backgroundImages.length;
         }
 
