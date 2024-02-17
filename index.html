@@ -38,7 +38,6 @@
     <script>
         // JavaScript to shuffle background images
         const backgroundImages = [
-            'https://i.imgur.com/WwFojjy.jpeg',
             'https://i.imgur.com/Oji6Xqo.jpeg',
             'https://i.imgur.com/Lzp68xU.jpeg',
             'https://i.imgur.com/fFJwwOa.jpeg',
@@ -48,15 +47,14 @@
             'https://i.imgur.com/2Ua601n.jpeg',
             'https://i.imgur.com/5CKj8b2.jpeg',
             'https://i.imgur.com/s0rsYxV.jpeg',
-            'https://i.imgur.com/jW877QS.jpeg' // Moved to the end
+            'https://i.imgur.com/jW877QS.jpeg'
         ];
 
         let currentIndex = 0;
 
         function changeBackground() {
-            document.body.style.transition = 'background 1s ease'; // Ensure transition for all changes
-            document.body.style.background = `url('${backgroundImages[currentIndex]}') no-repeat center center fixed`;
-            document.body.style.backgroundSize = 'cover';
+            document.body.style.transition = 'background 1s ease'; // Ensure smooth transition for all changes
+            document.body.style.backgroundImage = `url('${backgroundImages[currentIndex]}')`;
             currentIndex = (currentIndex + 1) % backgroundImages.length;
         }
 
@@ -69,7 +67,6 @@
     </header>
 
     <section>
-       
         <p>
             📍USA.Sony A6500.iPhone 15 Pro...
         </p>
